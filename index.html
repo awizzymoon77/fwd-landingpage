@@ -1,65 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sid Baral -Landing Page</title>
     <link rel="stylesheet" href="styles/normalize-fwd.css">
-	<link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 
 <body>
+    <div class="site-wrapper">
 
-	<header class="site-header">
-        <div class="logo">Sid Baral</div>
+        <header class="site-header">
+            <div class="logo">Sid Baral</div>
 
-		<button class="menu-toggle" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
-			<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
-				<title>Menu Icon</title>
-				<path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path>
-			</svg>
-		</button>
-          
-        <nav class="nav-menu" id="header-menu">
-            <li><a href="landing">Home</a></li>
-            <li><a href="about">About Me</a></li>
-            <li><a href="experience-projects.html">Experience</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-        </nav>
-    </header>
+            <button class="menu-toggle" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
+                    <title>Menu Icon</title>
+                    <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path>
+                </svg>
+            </button>
 
-    <main>
-        <section id="landing" class="landing">
-            <div class="image-container">
-                <img src="" alt="">
-            </div>
-        </section>
-        <section class="intro">
-            <img src="images/me.jpg" alt="Sid Baral's Image">
-            </div>
-            <h1>Welcome to My Portfolio</h1>
-            <h2>My name is <span>Sudarshan Baral</span></h2>
-            <h3>Frontend Web Developer Student</h3>
-            <p>Lets Create solutions & some magic</p>
+            <nav class="nav-menu" id="header-menu">
+                <ul>
+                    <li><a href="landing">Home</a></li>
+                    <li><a href="about">About Me</a></li>
+                    <li><a href="experience-projects.html">Experience</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
 
-            <div class="buttons">
-                <a href="resume/Sid Baral Resume.docx" class="button">Download My Resume</a>
-                <a href="contact" class="button">Contact Me</a>
-            </div>
-            <div class="social-link">
-                <a href="https://github.com/awizzymoon77" target="blank">
-                    <img src="images/github.png" alt="GitHub">
-                <a href="https://www.linkedin.com/in/sid-baral-b07127240/" target="blank">
-                    <img src="images/linkedin.png" alt="LinkedIn">
-            </div>
-            
+        <main>
+            <section id="landing" class="landing">
+                <div class="image-box">
+                    <img src="images/me.jpg" alt="Sid Baral">
+                </div>
 
-        </section>
-    </main>
+                <h1>My name is <span>Sid Baral<span></h1>
+                <h2>Frontend Web Developer Student</h2>
+                <p class="magic">
+                    <img src="images/magic.jpg" alt="icon" class="icon">
+                    Lets Create solutions & some magic
+                    <img src="images/magic.jpg" alt="icon" class="icon">
+                </p>
 
-    <footer>
-        <p>&copy; 2025 Sid Baral. All rights reserved.</p>
-    </footer>
+                <div class="buttons">
+                    <a href="resume/Sid Baral Resume.docx" class="button">Download My Resume</a>
+                    <a href="contact" class="button">Contact Me</a>
+                </div>
+                <div class="social-link">
+                    <a href="https://github.com/awizzymoon77" target="blank"></a>
+                        <img src="images/github.png" alt="GitHub">
+                        <a href="https://www.linkedin.com/in/sid-baral-b07127240/" target="blank">
+                            <img src="images/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </section>
+        </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Sid Baral. All rights reserved.</p>
+        </footer>
+        <script src="index.js"></script>
 </body>
+
 </html>
