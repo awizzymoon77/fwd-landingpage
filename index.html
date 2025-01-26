@@ -20,34 +20,32 @@
                     <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path>
                 </svg>
             </button>
-    </div>
-
             <nav class="nav-menu" id="header-menu">
                 <ul>
                     <li><a href="landing">Home</a></li>
                     <li><a href="about">About Me</a></li>
-                    <li><a href="experience-projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="projects">Projects</a></li>
+                    <li><a href="contact">Contact Me</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <section id="landing" class="landing">
+            <section id="about" class="landing">
                 <div class="image-box">
                     <img src="images/me.jpg" alt="Sid Baral">
                 </div>
-            <div class="text-container">
-                <h1>
-                    <span class="hello">Hello! I'm</span> <br>
-                    <span class="name">Sid Baral</span>
-                </h1>
-                <h2>Front-End Web Developer Student</h2>
+                <div class="text-container">
+                    <h1>
+                        <span class="hello">Hello! I'm</span> <br>
+                        <span class="name">Sid Baral</span>
+                    </h1>
+                    <h2>Front-End Web Developer Student</h2>
                     <div class="flashing-text">
-                    <span class="arrow">&#8595;</span>
-                    Click below to know more about me
-                    <span class="arrow">&#8595;</span>
-                    </div>  
+                        <span class="arrow">&#8595;</span>
+                        Click below to know more about me
+                        <span class="arrow">&#8595;</span>
+                    </div>
 
                     <div class="buttons">
                         <a href="resume/Sid Baral Resume.docx" class="button">My Resume</a>
@@ -60,13 +58,22 @@
                             <img src="images/linkedin.png" alt="LinkedIn"></a>
                     </div>
                 </div>
-                </section>
+            </section>
         </main>
 
-    <footer class="footer">
-        <p>&copy; 2025 Sid Baral. All rights reserved.</p>
-    </footer>
-    <script src="index.js"></script>
+        <footer class="footer">
+            <p>&copy; 2025 Sid Baral. All rights reserved.</p>
+        </footer>
+        <script>
+            function toggleMenu() {
+                const menu = document.getElementById('header-menu');
+                const expanded = menu.getAttribute('aria-expanded') === 'true' || false;
+                menu.setAttribute('aria-expanded', !expanded);
+                menu.classList.toggle('menu-visible');
+            }
+
+            document.querySelector('.menu-toggle').addEventListener('click', toggleMenu);
+        </script>
 </body>
 
 </html>
