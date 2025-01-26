@@ -123,6 +123,8 @@ body {
     align-items: center;
     text-align: center;
     padding: 20px;
+    padding-top: 40px;
+    margin-top: 40px;
 }
 
 .image-box {
@@ -265,12 +267,17 @@ body {
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        max-width: 75rem;
+        margin: 0 auto;
+        margin-top: 100px;
     }
 
     .image-box {
         flex:0 1 300px;
-        margin-right: 100px;
-        margin-left:240px;
+        margin-right: 50px;
+        margin-left:50px;
         margin-bottom: 0;
     }
 
@@ -284,7 +291,8 @@ body {
         flex: 1;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        text-align: center;
     }
 
     .landing h1 {
